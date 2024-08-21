@@ -120,7 +120,7 @@ h2{
         color: #008ECC;
     }
 }
-.main_section_products, .main_section_categories{
+.main_section_products, .main_section_categories, .main_section_top_brands, .main_section_essentials{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -137,7 +137,7 @@ h2{
     }
     button:hover{
         color: #008ECC;
-    }
+    }   
 }
 .product{
     width: 227px;
@@ -214,4 +214,27 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.main_section_categories{
+    padding-top: 60px;
+}
+.main_section_top_brands{
+    padding-top: 60px;
+    div{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+}
+.essentials_item{
+    width: 187px;
+    height: 187px;
+    background-color: #F5F5F5;
+    border-radius: 16px;
+}
+.main_section_essentials+ div{
+        display: flex; 
+        justify-content: space-around;
+        margin-top: 60px;
+        align-items: center;
 }
